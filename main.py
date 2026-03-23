@@ -7,10 +7,7 @@ from pydantic import BaseModel
 import logging
 from utils.parser import extract_text
 from utils.vector_store import add_document, search, DOCUMENTS
-import os
 import re
-from openai import OpenAI
-from dotenv import load_dotenv
 from utils.fallback_answer import generate_fallback_answer
 from utils.scorer import score_resume
 
@@ -45,10 +42,6 @@ def generate_fallback_answer(query: str, context: str) -> str:
         return f"{name} has skills in {skills} and {experience} of experience."
 
     return "Cannot answer from the uploaded document."
-
-load_dotenv()
-
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def generate_answer(query: str, context: str) -> str:
     prompt = f"""
