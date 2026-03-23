@@ -29,6 +29,10 @@ A production-ready AI-powered Resume Scorer built with FastAPI that supports res
 - What is the candidate’s experience?
 - Who is the candidate?
 
+
+### Swagger UI
+![Swagger UI](screenshot.png)
+
 ## Run Locally
 ```bash
 uvicorn main:app --host 0.0.0.0 --port 8000
@@ -42,9 +46,6 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 - Fallback logic handles low-confidence queries  
 - Logging middleware tracks performance metrics  
 - CI pipeline ensures automated testing on every push  
-
-### Swagger UI
-![Swagger UI](screenshot.png)
 
 ## 📌 Project Summary
 
