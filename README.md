@@ -33,9 +33,6 @@ A production-ready AI-powered Resume Scorer built with FastAPI that supports res
 ### Swagger UI
 ![Swagger UI](screenshot.png)
 
-## Run Locally
-```bash
-uvicorn main:app --host 0.0.0.0 --port 8000
 
 ## 🏗 Architecture
 
@@ -100,3 +97,8 @@ Evaluate resumes with a structured scoring system:
 ## 📌 Project Summary
 
 Developed a production-ready AI Resume Scorer using FastAPI that processes resumes, performs semantic search, and answers queries with similarity-based results. Integrated LLM for natural language responses with a fallback mechanism to ensure reliability during API failures. Implemented resume scoring, performance monitoring, and CI/CD pipeline using GitHub Actions to maintain code quality.
+
+
+## Run Locally
+```bash
+uvicorn main:app --host 0.0.0.0 --port 8000
