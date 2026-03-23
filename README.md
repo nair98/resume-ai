@@ -1,3 +1,4 @@
+![CI](https://github.com/nair98/resume-ai/actions/workflows/ci.yml/badge.svg)
 # AI Resume Scorer
 
 A production-ready AI-powered Resume Scorer built with FastAPI that supports resume upload, semantic search, intelligent query handling, fallback mechanisms, performance logging, and automated smoke testing.
@@ -26,3 +27,16 @@ A production-ready AI-powered Resume Scorer built with FastAPI that supports res
 ## Run Locally
 ```bash
 uvicorn main:app --host 0.0.0.0 --port 8000
+
+## 🏗 Architecture
+
+- FastAPI backend handles API requests  
+- Parser extracts resume text  
+- Vector store performs semantic search  
+- Query engine returns relevant results with similarity score  
+- Fallback logic handles low-confidence queries  
+- Logging middleware tracks performance metrics  
+- CI pipeline ensures automated testing on every push  
+
+### Swagger UI
+![Swagger UI](screenshot.png)
