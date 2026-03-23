@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-
 def generate_answer(query: str, context: str) -> str:
     api_key = os.getenv("OPENAI_API_KEY")
 

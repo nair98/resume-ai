@@ -11,7 +11,6 @@ import os
 import re
 from openai import OpenAI
 from dotenv import load_dotenv
-from utils.llm import generate_answer
 from utils.fallback_answer import generate_fallback_answer
 from utils.scorer import score_resume
 
@@ -212,6 +211,7 @@ async def ask_question(request: QueryRequest):
         fallback_used = False
 
         try:
+            from utils.llm import generate_answer
             llm_answer = generate_answer(query, context)
         except Exception as e:
             logger.warning(f"LLM failed, using fallback answer: {e}")
