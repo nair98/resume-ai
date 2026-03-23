@@ -40,3 +40,7 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 
 ### Swagger UI
 ![Swagger UI](screenshot.png)
+
+## 📌 Project Summary
+
+Developed a production-ready AI Resume Scorer using FastAPI that processes resumes, performs semantic search, and answers user queries with similarity-based results. Implemented fallback mechanisms for low-confidence queries, integrated performance logging (latency and memory usage), and built an automated CI pipeline using GitHub Actions to ensure code reliability and quality.
